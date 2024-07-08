@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form with Radio Buttons, Checkboxes, and Select Menus</title>
+</head>
+<body>
+    <form action="process_form.php" method="post">
+        <!-- Radio Buttons -->
+        <h3>Choose a color:</h3>
+        <input type="radio" id="color_red" name="color" value="red">
+        <label for="color_red">Red</label>
+        <input type="radio" id="color_green" name="color" value="green">
+        <label for="color_green">Green</label>
+        <input type="radio" id="color_blue" name="color" value="blue">
+        <label for="color_blue">Blue</label>
+        
+        <!-- Checkboxes -->
+        <h3>Select your hobbies:</h3>
+        <input type="checkbox" id="hobby_reading" name="hobbies[]" value="reading">
+        <label for="hobby_reading">Reading</label>
+        <input type="checkbox" id="hobby_traveling" name="hobbies[]" value="traveling">
+        <label for="hobby_traveling">Traveling</label>
+        <input type="checkbox" id="hobby_coding" name="hobbies[]" value="coding">
+        <label for="hobby_coding">Coding</label>
+        
+        <!-- Select Menu -->
+        <h3>Choose your country:</h3>
+        <select name="country" id="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select>
+        
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
